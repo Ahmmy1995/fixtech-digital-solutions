@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container py-10 grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <img src="/lovable-uploads/596605ea-06ba-498e-b1c7-64264121a517.png" alt="Fixtech Services logo" className="h-8 w-auto" />
+            <img src="/brand/fixtech-logo.png" alt="Fixtech Services logo" className="h-8 w-auto" loading="lazy" />
             <span className="sr-only">Fixtech Services</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-sm">Reliable IT onsite services, deployments, and managed support for growing businesses.</p>
