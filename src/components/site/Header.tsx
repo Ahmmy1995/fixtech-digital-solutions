@@ -17,7 +17,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="inline-flex items-center rounded-md bg-card px-2 py-1 ring-1 ring-border shadow-sm">
-            <img src="/lovable-uploads/596605ea-06ba-498e-b1c7-64264121a517.png" alt="Fixtech Services logo" className="h-7 w-auto" />
+            <img src="/brand/fixtech-logo-clean.png" alt="Fixtech Services logo" className="h-7 w-auto" />
           </span>
           <span className="sr-only">Fixtech Services</span>
         </Link>
