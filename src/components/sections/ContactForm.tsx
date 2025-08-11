@@ -21,8 +21,8 @@ export default function ContactForm() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      toast({ title: "Opening your email client…", description: "If it doesn't open, write to hello@fixtech.services." });
-      window.location.href = `mailto:hello@fixtech.services?subject=${subject}&body=${body}`;
+      toast({ title: "Opening your email client…", description: "If it doesn't open, write to support@fixtech.services." });
+      window.location.href = `mailto:support@fixtech.services?subject=${subject}&body=${body}`;
     }, 300);
   }
 

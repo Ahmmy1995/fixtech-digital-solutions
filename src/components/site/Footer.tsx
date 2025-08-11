@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="font-semibold mb-3">Get in touch</h3>
-          <p className="text-sm text-muted-foreground">Email: hello@fixtech.services</p>
+          <p className="text-sm text-muted-foreground">Email: support@fixtech.services</p>
           <p className="text-sm text-muted-foreground">Hours: Mon–Fri, 9:00–18:00</p>
         </div>
       </div>

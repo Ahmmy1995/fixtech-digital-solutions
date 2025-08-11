@@ -19,7 +19,7 @@ export default function Contact() {
         <aside className="lg:pl-6">
           <div className="rounded-lg border p-6 bg-secondary/30">
             <h3 className="font-semibold">Prefer email?</h3>
-            <p className="text-sm text-muted-foreground">Reach us directly at <a href="mailto:hello@fixtech.services" className="underline">hello@fixtech.services</a></p>
+            <p className="text-sm text-muted-foreground">Reach us directly at <a href="mailto:support@fixtech.services" className="underline">support@fixtech.services</a></p>
             <div className="mt-4 text-sm text-muted-foreground">Response within 1 business day.</div>
           </div>
         </aside>
