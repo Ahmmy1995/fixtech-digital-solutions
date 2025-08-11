@@ -16,9 +16,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="inline-flex items-center rounded-md bg-card px-2 py-1 ring-1 ring-border shadow-sm">
-            <img src="/brand/fixtech-logo-clean.png" alt="Fixtech Services logo" className="h-7 w-auto" />
-          </span>
+          <img src="/lovable-uploads/596605ea-06ba-498e-b1c7-64264121a517.png" alt="Fixtech Services logo" className="h-8 w-auto" />
           <span className="sr-only">Fixtech Services</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
