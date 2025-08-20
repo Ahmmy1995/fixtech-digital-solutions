@@ -20,7 +20,6 @@ export default function Header() {
             src="/brand/logo_new.png"
             alt="Fixtech Services logo"
             className="h-40 w-auto"
-            // onClick={}
           />
           <span className="sr-only">Fixtech Services</span>
         </Link>
