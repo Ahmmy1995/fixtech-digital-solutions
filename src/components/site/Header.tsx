@@ -16,7 +16,12 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/lovable-uploads/596605ea-06ba-498e-b1c7-64264121a517.png" alt="Fixtech Services logo" className="h-8 w-auto" />
+          <img
+            src="/brand/logo_new.png"
+            alt="Fixtech Services logo"
+            className="h-40 w-auto"
+            // onClick={}
+          />
           <span className="sr-only">Fixtech Services</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -25,7 +30,11 @@ export default function Header() {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `relative story-link ${isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"}`
+                `relative story-link ${
+                  isActive
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`
               }
             >
               {item.label}
@@ -42,7 +51,20 @@ export default function Header() {
           aria-label="Toggle menu"
           onClick={() => setOpen((o) => !o)}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
         </button>
       </div>
       {open && (
@@ -54,7 +76,11 @@ export default function Header() {
                 to={item.to}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `block ${isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"}`
+                  `block ${
+                    isActive
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`
                 }
               >
                 {item.label}

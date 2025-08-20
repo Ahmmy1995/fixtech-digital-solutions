@@ -11,10 +11,11 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
-  base: process.env.VITE_BASE_PATH || "/fixtech-digital-solutions",
+  base: mode === "development" 
+    ? "/" 
+    : process.env.VITE_BASE_PATH || "/fixtech-digital-solutions",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

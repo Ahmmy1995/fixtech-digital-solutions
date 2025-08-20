@@ -8,7 +8,10 @@ import Footer from "@/components/site/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEO title="Fixtech Services — IT Onsite Support & Managed Services" description="Onsite IT services across deployments, networking, cabling, and break/fix. Request certified technicians with clear SLAs." />
+      <SEO
+        title="Fixtech Services — IT Onsite Support & Managed Services"
+        description="Onsite IT services across deployments, networking, cabling, and break/fix. Request certified technicians with clear SLAs."
+      />
       <Header />
       <main className="flex-1">
         <Hero />
