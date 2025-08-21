@@ -1,17 +1,21 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="border-t mt-16">
       <div className="container py-10 grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <img
-              src="/brand/logo_new.png"
-              alt="Fixtech Services logo"
-              className="h-32 w-auto"
-            />
+            <Link to="/">
+              <img
+                src="/brand/logo_new.png"
+                alt="Fixtech Services logo"
+                className="h-32 w-auto"
+              />
+            </Link>
             <span className="sr-only">Fixtech Services</span>
           </div>
-          <p className="text-sm text-muted-foreground max-w-sm">
+          <p className="text-sm text-muted-foreground max-w-sm font-medium">
             Reliable IT onsite services, deployments, and managed support for
             growing businesses.
           </p>
@@ -20,50 +24,54 @@ export default function Footer() {
           <h3 className="font-semibold mb-3">Company</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
-              <a href="/about" className="hover:text-foreground">
+              <Link to="/about" className="font-medium hover:text-foreground">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className="hover:text-foreground">
+              <Link
+                to="/services"
+                className="font-medium hover:text-foreground"
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/reviews" className="hover:text-foreground">
+              <Link to="/reviews" className="font-medium hover:text-foreground">
                 Reviews
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-foreground">
+              <Link to="/contact" className="font-medium hover:text-foreground">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div>
           <h3 className="font-semibold mb-3">Get in touch</h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground font-medium">
             Email:{" "}
-            <a
-              href="mailto:support@fixtech.services"
+            <Link
+              to="mailto:support@fixtech.services"
               className="text-primary hover:underline"
             >
               support@fixtech.services
-            </a>
+            </Link>
           </p>
-          <p className="text-sm text-muted-foreground">
-            Hours: Mon–Fri, 9:00–18:00
+          <p className="text-sm text-muted-foreground font-medium">
+            Hours:{" "}
+            <span className="text-sm text-blue-500">Mon–Fri, 9:00–18:00</span>
           </p>
           <a>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground font-medium">
               Contact:{" "}
-              <a
-                href="tel:+393481700672"
+              <Link
+                to="tel:+393481700672"
                 className="text-primary hover:underline"
               >
                 +39 348 1700 672
-              </a>
+              </Link>
             </p>
           </a>
         </div>

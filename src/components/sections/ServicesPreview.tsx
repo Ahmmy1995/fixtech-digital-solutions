@@ -1,4 +1,4 @@
-import { Server, Network, Cable, Headset, Laptop } from "lucide-react";
+import { Server, Network, Cable, Headset, Laptop, Cctv } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -27,6 +27,11 @@ const services = [
     title: "Workplace & Endpoints",
     desc: "Device provisioning, OS migrations, MDM enrollments and asset lifecycle.",
   },
+  {
+    icon: Cctv,
+    title: "Site Survery & Installation",
+    desc: "surveys followed by the installation of IT devices for its customers across the globe.",
+  },
 ];
 
 export default function ServicesPreview() {
@@ -35,11 +40,16 @@ export default function ServicesPreview() {
       <div className="container">
         <div className="max-w-2xl mb-8">
           <h2 className="text-3xl font-bold">Our Core Services</h2>
-          <p className="text-muted-foreground mt-2">End-to-end onsite IT services designed for reliability and scale.</p>
+          <p className="text-muted-foreground mt-2">
+            End-to-end onsite IT services designed for reliability and scale.
+          </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map(({ icon: Icon, title, desc }) => (
-            <Card key={title} className="transition-transform hover:translate-y-[-2px]">
+            <Card
+              key={title}
+              className="transition-transform hover:translate-y-[-2px]"
+            >
               <CardHeader>
                 <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary/10 text-primary">
                   <Icon />
