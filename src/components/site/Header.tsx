@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="container flex h-16 items-center justify-between">
+        {/* first item in header */}
         <Link to="/" className="flex items-center gap-2">
           <img
             src="/brand/logo_new.png"
@@ -23,6 +24,7 @@ export default function Header() {
           />
           <span className="sr-only">Fixtech Services</span>
         </Link>
+        {/* second item in header menu */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {navItems.map((item) => (
             <NavLink
@@ -40,11 +42,13 @@ export default function Header() {
             </NavLink>
           ))}
         </nav>
+        {/* third item in header menu */}
         <div className="hidden md:block">
           <Button asChild variant="hero" size="lg" className="hover-scale">
             <Link to="/contact">Get Support</Link>
           </Button>
         </div>
+
         <button
           className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-foreground hover:bg-accent/50"
           aria-label="Toggle menu"
@@ -66,6 +70,7 @@ export default function Header() {
           </svg>
         </button>
       </div>
+
       {open && (
         <div className="md:hidden border-t bg-background">
           <div className="container py-4 space-y-3">
