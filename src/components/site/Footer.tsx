@@ -44,11 +44,28 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Get in touch</h3>
           <p className="text-sm text-muted-foreground">
-            Email: support@fixtech.services
+            Email:{" "}
+            <a
+              href="mailto:support@fixtech.services"
+              className="text-primary hover:underline"
+            >
+              support@fixtech.services
+            </a>
           </p>
           <p className="text-sm text-muted-foreground">
             Hours: Mon–Fri, 9:00–18:00
           </p>
+          <a>
+            <p className="text-sm text-muted-foreground">
+              Contact:{" "}
+              <a
+                href="tel:+393481700672"
+                className="text-primary hover:underline"
+              >
+                +39 348 1700 672
+              </a>
+            </p>
+          </a>
         </div>
       </div>
       <div className="border-t py-6 text-center text-xs text-muted-foreground">
