@@ -16,13 +16,18 @@ export default function ContactForm() {
     const message = String(data.get("message") || "");
 
     const subject = encodeURIComponent(`New inquiry from ${name} (${company})`);
-    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}\nCompany: ${company}`);
+    const body = encodeURIComponent(
+      `${message}\n\nFrom: ${name}\nEmail: ${email}\nCompany: ${company}`
+    );
 
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      toast({ title: "Opening your email client…", description: "If it doesn't open, write to support@fixtech.services." });
-      window.location.href = `mailto:support@fixtech.services?subject=${subject}&body=${body}`;
+      toast({
+        title: "Opening your email client…",
+        description: "If it doesn't open, write to info@fixtech.services.",
+      });
+      window.location.href = `mailto:info@fixtech.services?subject=${subject}&body=${body}`;
     }, 300);
   }
 
@@ -35,7 +40,12 @@ export default function ContactForm() {
         </div>
         <div>
           <label className="text-sm">Email</label>
-          <Input type="email" name="email" required placeholder="you@company.com" />
+          <Input
+            type="email"
+            name="email"
+            required
+            placeholder="you@company.com"
+          />
         </div>
       </div>
       <div>
@@ -44,10 +54,19 @@ export default function ContactForm() {
       </div>
       <div>
         <label className="text-sm">Message</label>
-        <Textarea name="message" rows={6} required placeholder="Tell us about your project or support need" />
+        <Textarea
+          name="message"
+          rows={6}
+          required
+          placeholder="Tell us about your project or support need"
+        />
       </div>
-      <Button type="submit" size="lg" variant="hero" disabled={loading}>{loading ? "Preparing…" : "Send Inquiry"}</Button>
-      <p className="text-xs text-muted-foreground">By submitting, you agree to our response via email. No spam, ever.</p>
+      <Button type="submit" size="lg" variant="hero" disabled={loading}>
+        {loading ? "Preparing…" : "Send Inquiry"}
+      </Button>
+      <p className="text-xs text-muted-foreground">
+        By submitting, you agree to our response via email. No spam, ever.
+      </p>
     </form>
   );
 }

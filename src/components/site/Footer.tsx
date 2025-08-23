@@ -53,10 +53,10 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground font-medium">
             Email:{" "}
             <Link
-              to="mailto:support@fixtech.services"
+              to="mailto:info@fixtech.services"
               className="text-primary hover:underline"
             >
-              support@fixtech.services
+              info@fixtech.services
             </Link>
           </p>
           <p className="text-sm text-muted-foreground font-medium">
