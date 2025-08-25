@@ -18,10 +18,11 @@ export default function Header() {
         {/* first item in header */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/brand/logo_new.png"
+            src="/brand/new_logo.png"
             alt="Fixtech Services logo"
-            className="h-40 w-auto"
+            className="h-16 w-auto"
           />
+
           <span className="sr-only">Fixtech Services</span>
         </Link>
         {/* second item in header menu */}
